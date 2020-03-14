@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584189075320,
+  "timestamp": 1584190093486,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/assets/favicon.ico",
         "/index.html",
-        "/main-es2015.b7481bee1cd07d8e194b.js",
-        "/main-es5.b7481bee1cd07d8e194b.js",
+        "/main-es2015.bc75c66f1d585bf22e46.js",
+        "/main-es5.bc75c66f1d585bf22e46.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.ad3677d2e054997815dd.js",
         "/polyfills-es5.6efb038856625aba52db.js",
@@ -61,8 +61,8 @@
     {
       "name": "api-freshness",
       "patterns": [
-        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com\\/rates",
-        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com\\/balance"
+        "https:\\/\\/api\\.get-burst\\.cf\\/rates",
+        "https:\\/\\/api\\.get-burst\\.cf\\/balance"
       ],
       "strategy": "freshness",
       "maxSize": 10,
@@ -100,9 +100,9 @@
     "/assets/icons/icon-512x512.png": "15c47d364c25e1e1fb95c71a44e952f6a689e142",
     "/assets/icons/icon-72x72.png": "c1e0a876e54df26832482a37b77319fc68c3a7af",
     "/assets/icons/icon-96x96.png": "b4cc1565556212deb175e22351681a07aa4e4665",
-    "/index.html": "5c3ad60e0144c47bca6fd96661d8fe81a678e9d3",
-    "/main-es2015.b7481bee1cd07d8e194b.js": "10b5f77d9b729348bcb5085737561c1255bd55c8",
-    "/main-es5.b7481bee1cd07d8e194b.js": "364c63d65f5f3ede64a6468c4a29f46cddd23ac0",
+    "/index.html": "8908ea82062d64583eabf94ce6d2956accd9f982",
+    "/main-es2015.bc75c66f1d585bf22e46.js": "e217ecd54e51b0c85a34697844a9398d2319bd17",
+    "/main-es5.bc75c66f1d585bf22e46.js": "7e9061d210f7023d87cc594d91bf29c63ce284e6",
     "/manifest.webmanifest": "ec74ba16d2fad55da9a8935406d3c899359b80b3",
     "/polyfills-es2015.ad3677d2e054997815dd.js": "98a79ea66d16fefe0a544514388a5617547d55bc",
     "/polyfills-es5.6efb038856625aba52db.js": "c5a5c4791785aa72af6f223582a9441203cf720d",
