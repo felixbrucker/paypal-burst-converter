@@ -9,7 +9,7 @@
           <h4 style="font-weight: 300">
             Current market price:
             <div *ngIf="currentRate" style="display: inline-block;">
-              1 BURST ≈ {{currentRate}} {{selectedCurrency}}
+              1 BURST = {{currentRate}} {{selectedCurrency}}
             </div>
             <div style="display: inline-block;" *ngIf="!currentRate">
               <div class="spinner-grow" role="status">
@@ -53,7 +53,7 @@
       <div class="row justify-content-center" style="margin-bottom: 1em">
         <div class="col-md-6">
           <div class="input-group">
-            <input type="number" class="form-control" [(ngModel)]="buyAmountFiat" placeholder="Amount to buy" [ngClass]="{'is-invalid': amountToHigh, 'is-valid': !amountToHigh && buyAmountFiat}">
+            <input type="number" class="form-control" [(ngModel)]="buyAmountFiat" placeholder="Amount to buy" [ngClass]="{'is-invalid': amountTooHigh, 'is-valid': !amountTooHigh && buyAmountFiat}">
             <div class="input-group-append">
               <input
                 id="typeahead-focus"
@@ -67,13 +67,13 @@
                 style="width: 4em; background-color: #fff"
               />
             </div>
-            <div class="invalid-feedback" *ngIf="amountToHigh">
+            <div class="invalid-feedback" *ngIf="amountTooHigh">
               Not enough balance to buy that much BURST!
             </div>
           </div>
         </div>
       </div>
-      <a class="btn btn-primary btn-lg" target="_blank" href="{{paypalMeLink}}" role="button">{{buyBurstButtonText}}</a>
+      <a class="btn btn-primary btn-lg" target="_blank" href="{{paypalMeLink}}" role="button" [class.disabled]="amountTooHigh ? true: null">{{buyBurstButtonText}}</a>
     </div>
   </div>
 </div>

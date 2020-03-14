@@ -46,7 +46,7 @@ export class MainComponent implements OnInit {
     );
   };
 
-  get amountToHigh() {
+  get amountTooHigh() {
     if (this.balance === null) {
       return false;
     }
