@@ -1,0 +1,118 @@
+{
+  "configVersion": 1,
+  "timestamp": 1584178372130,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/favicon.ico",
+        "/index.html",
+        "/main-es2015.206a550ed2a2b369cac8.js",
+        "/main-es5.206a550ed2a2b369cac8.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.ad3677d2e054997815dd.js",
+        "/polyfills-es5.6efb038856625aba52db.js",
+        "/runtime-es2015.0811dcefd377500b5b1a.js",
+        "/runtime-es5.0811dcefd377500b5b1a.js",
+        "/styles.2022448d94976708c350.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/browserconfig.xml",
+        "/assets/favicon-114.png",
+        "/assets/favicon-120.png",
+        "/assets/favicon-144.png",
+        "/assets/favicon-150.png",
+        "/assets/favicon-152.png",
+        "/assets/favicon-16.png",
+        "/assets/favicon-160.png",
+        "/assets/favicon-180.png",
+        "/assets/favicon-192.png",
+        "/assets/favicon-310.png",
+        "/assets/favicon-32.png",
+        "/assets/favicon-57.png",
+        "/assets/favicon-60.png",
+        "/assets/favicon-64.png",
+        "/assets/favicon-70.png",
+        "/assets/favicon-72.png",
+        "/assets/favicon-76.png",
+        "/assets/favicon-96.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/browserconfig.xml": "c9e20283278badd2ab93e5fa7c52a7f82e44d71f",
+    "/assets/favicon-114.png": "e9db5186e45b46e05843b18c4aa118ed15af8f88",
+    "/assets/favicon-120.png": "6be156eea7781c799204690512932672967a6a53",
+    "/assets/favicon-144.png": "86a0da56ec985156ee2c1624db4fae98098a72b7",
+    "/assets/favicon-150.png": "03ccb49698765c6e56839a315c95201e5a9b8c60",
+    "/assets/favicon-152.png": "ad4dbf770305595dff4de68e11c0a1b77f3b8252",
+    "/assets/favicon-16.png": "e07b45e7b0a490f2c620bb7df226c740e35fe112",
+    "/assets/favicon-160.png": "a52c6d242e69cb61b99a4cb3c877d502b1db32b1",
+    "/assets/favicon-180.png": "4615e0cb6fc26c6ee7292be1ee8d5a3c8faebceb",
+    "/assets/favicon-192.png": "b8ed5306b59ed8122219c48cb273d06e1c997d68",
+    "/assets/favicon-310.png": "e701db96e6c4725e3413cc5f6d8b3135d4fec0d6",
+    "/assets/favicon-32.png": "259bc77649c35f129e5b7c1bdf0432d1a8c557f1",
+    "/assets/favicon-57.png": "41b45bcfdb732c37845a5f0c091cb9bdacafb2bb",
+    "/assets/favicon-60.png": "3f0dcb371d642044673b68b2323482f2ff84e1e3",
+    "/assets/favicon-64.png": "f4eb9d5575a0fdf07f89c36ed6003924d6487ce8",
+    "/assets/favicon-70.png": "fa5414650695a0afb95a517fbf672c1b7ae83e25",
+    "/assets/favicon-72.png": "c1e0a876e54df26832482a37b77319fc68c3a7af",
+    "/assets/favicon-76.png": "ade42ddde636f4c92b6e91140d784573e6aeece8",
+    "/assets/favicon-96.png": "b4cc1565556212deb175e22351681a07aa4e4665",
+    "/assets/favicon.ico": "a6932b12e334c6fcc638ad7804141850103bf486",
+    "/assets/icons/icon-128x128.png": "b650acb5720127643fa98bcec30e372337a9ee72",
+    "/assets/icons/icon-144x144.png": "86a0da56ec985156ee2c1624db4fae98098a72b7",
+    "/assets/icons/icon-152x152.png": "ad4dbf770305595dff4de68e11c0a1b77f3b8252",
+    "/assets/icons/icon-192x192.png": "b8ed5306b59ed8122219c48cb273d06e1c997d68",
+    "/assets/icons/icon-384x384.png": "884703426431a03879cecff5c7237b772dc43d6f",
+    "/assets/icons/icon-512x512.png": "15c47d364c25e1e1fb95c71a44e952f6a689e142",
+    "/assets/icons/icon-72x72.png": "c1e0a876e54df26832482a37b77319fc68c3a7af",
+    "/assets/icons/icon-96x96.png": "b4cc1565556212deb175e22351681a07aa4e4665",
+    "/index.html": "f4d74275662bdb91d3ad650107656d1e4f79dbc8",
+    "/main-es2015.206a550ed2a2b369cac8.js": "fd1022f2cdb3bcfe4681fa617d2cf4e5e75b7886",
+    "/main-es5.206a550ed2a2b369cac8.js": "3829be5130f3f186e95656d7cdc288267e7ccea0",
+    "/manifest.webmanifest": "ec74ba16d2fad55da9a8935406d3c899359b80b3",
+    "/polyfills-es2015.ad3677d2e054997815dd.js": "98a79ea66d16fefe0a544514388a5617547d55bc",
+    "/polyfills-es5.6efb038856625aba52db.js": "c5a5c4791785aa72af6f223582a9441203cf720d",
+    "/runtime-es2015.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.2022448d94976708c350.css": "5469326f8dc17abaf14ea120715eb792a8002d5d"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
