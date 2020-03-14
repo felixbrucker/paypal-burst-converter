@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584182884056,
+  "timestamp": 1584183169559,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -19,9 +19,7 @@
         "/runtime-es5.0811dcefd377500b5b1a.js",
         "/styles.2022448d94976708c350.css"
       ],
-      "patterns": [
-        "https:\\/\\/get-burst\\.foxypool\\.cf"
-      ]
+      "patterns": []
     },
     {
       "name": "assets",
@@ -63,12 +61,13 @@
     {
       "name": "api-freshness",
       "patterns": [
-        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com\\/[^/]*"
+        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com\\/rates",
+        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com\\/balance"
       ],
       "strategy": "freshness",
       "maxSize": 10,
       "maxAge": 604800000,
-      "timeoutMs": 5000,
+      "timeoutMs": 3000,
       "version": 1
     }
   ],
