@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584178372130,
+  "timestamp": 1584181473295,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -57,7 +57,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "patterns": [
+        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 604800000,
+      "timeoutMs": 3000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/assets/browserconfig.xml": "c9e20283278badd2ab93e5fa7c52a7f82e44d71f",
     "/assets/favicon-114.png": "e9db5186e45b46e05843b18c4aa118ed15af8f88",
