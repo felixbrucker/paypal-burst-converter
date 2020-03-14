@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584182405278,
+  "timestamp": 1584182750293,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -19,7 +19,9 @@
         "/runtime-es5.0811dcefd377500b5b1a.js",
         "/styles.2022448d94976708c350.css"
       ],
-      "patterns": []
+      "patterns": [
+        "\\/"
+      ]
     },
     {
       "name": "assets",
@@ -61,7 +63,7 @@
     {
       "name": "api-freshness",
       "patterns": [
-        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com"
+        "https:\\/\\/foxy-paypal-burst-converter\\.herokuapp\\.com\\/[^/]*"
       ],
       "strategy": "freshness",
       "maxSize": 10,
