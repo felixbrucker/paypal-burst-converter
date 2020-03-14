@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1584181473295,
+  "timestamp": 1584181662516,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -66,7 +66,7 @@
       "strategy": "freshness",
       "maxSize": 10,
       "maxAge": 604800000,
-      "timeoutMs": 3000,
+      "timeoutMs": 5000,
       "version": 1
     }
   ],
