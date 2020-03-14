@@ -25,8 +25,14 @@ export class MainComponent implements OnInit {
   ) {}
 
   async ngOnInit() {
-    this.rates = await this.apiService.getRates();
-    this.balance = await this.apiService.getBalance();
+    try {
+      const [rates, balance] = await Promise.all([
+        this.apiService.getRates(),
+        this.apiService.getBalance(),
+      ]);
+      this.rates = rates;
+      this.balance = balance;
+    } catch (err) {}
   }
 
   search = (text$: Observable<string>) => {
