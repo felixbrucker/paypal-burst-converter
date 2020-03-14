@@ -10,7 +10,7 @@
       "strategy": "freshness",
       "maxSize": 10,
       "maxAge": "7d",
-      "timeout": "3s"
+      "timeout": "5s"
     }
   }],
   "assetGroups": [
