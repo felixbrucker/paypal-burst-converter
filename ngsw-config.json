@@ -1,6 +1,18 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
+  "dataGroups": [{
+    "name": "api-freshness",
+    "urls": [
+      "https://foxy-paypal-burst-converter.herokuapp.com"
+    ],
+    "cacheConfig": {
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": "7d",
+      "timeout": "3s"
+    }
+  }],
   "assetGroups": [
     {
       "name": "app",
