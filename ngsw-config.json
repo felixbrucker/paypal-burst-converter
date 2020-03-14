@@ -21,10 +21,12 @@
         "files": [
           "/assets/favicon.ico",
           "/index.html",
-          "/",
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "/"
         ]
       }
     }, {
