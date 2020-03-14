@@ -4,13 +4,14 @@
   "dataGroups": [{
     "name": "api-freshness",
     "urls": [
-      "https://foxy-paypal-burst-converter.herokuapp.com/*"
+      "https://foxy-paypal-burst-converter.herokuapp.com/rates",
+      "https://foxy-paypal-burst-converter.herokuapp.com/balance"
     ],
     "cacheConfig": {
       "strategy": "freshness",
       "maxSize": 10,
       "maxAge": "7d",
-      "timeout": "5s"
+      "timeout": "3s"
     }
   }],
   "assetGroups": [
@@ -24,9 +25,6 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
-        ],
-        "urls": [
-          "https://get-burst.foxypool.cf"
         ]
       }
     }, {
