@@ -1,0 +1,81 @@
+<div class="row justify-content-center">
+  <div class="col-md-6" style="text-align: center">
+    <div class="jumbotron">
+      <h2 class="display-4">Buy BURST instantly!</h2>
+      <p class="lead">Buy BURST at the current market price via PayPal.</p>
+      <hr class="my-4">
+      <div class="row" style="padding-bottom: 1em;">
+        <div class="col-md-6">
+          <h4 style="font-weight: 300">
+            Current market price:
+            <div *ngIf="currentRate" style="display: inline-block;">
+              1 BURST ≈ {{currentRate}} {{selectedCurrency}}
+            </div>
+            <div style="display: inline-block;" *ngIf="!currentRate">
+              <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </h4>
+        </div>
+        <div class="col-md-6">
+          <h4 style="font-weight: 300">
+            Balance left:
+            <div *ngIf="hasBurstBalance" style="display: inline-block;">
+              {{burstBalanceFormatted}} BURST
+            </div>
+            <div *ngIf="!hasBurstBalance" style="display: inline-block;">
+              <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" style="text-align: left; font-weight: 300;font-size: large">
+          <ol>
+            <li>
+              Select "Send money to friends and family" so that that no PayPal transaction fees apply
+            </li>
+            <li>
+              Enter your BURST-XXXX-XXXX-XXXX-XXXXX address in the PayPal note field
+            </li>
+            <li>
+              Send the money
+            </li>
+            <li>
+              Profit!
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="margin-bottom: 1em">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="number" class="form-control" [(ngModel)]="buyAmountFiat" placeholder="Amount to buy" [ngClass]="{'is-invalid': amountToHigh, 'is-valid': !amountToHigh && buyAmountFiat}">
+            <div class="input-group-append">
+              <input
+                id="typeahead-focus"
+                type="text"
+                class="input-group-text from-control"
+                [(ngModel)]="selectedCurrency"
+                [ngbTypeahead]="search"
+                (focus)="focus$.next($event.target.value)"
+                (click)="click$.next($event.target.value)"
+                #instance="ngbTypeahead"
+                style="width: 4em; background-color: #fff"
+              />
+            </div>
+            <div class="invalid-feedback" *ngIf="amountToHigh">
+              Not enough balance to buy that much BURST!
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-lg" target="_blank" href="{{paypalMeLink}}" role="button">{{buyBurstButtonText}}</a>
+    </div>
+  </div>
+</div>
+
+
