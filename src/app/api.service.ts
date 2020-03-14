@@ -7,7 +7,7 @@ import axios from 'axios';
 export class ApiService {
 
   private client = axios.create({
-    baseURL: 'https://foxy-paypal-burst-converter.herokuapp.com',
+    baseURL: 'https://api.get-burst.cf',
   });
 
   constructor() {}

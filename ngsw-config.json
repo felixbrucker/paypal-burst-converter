@@ -4,8 +4,8 @@
   "dataGroups": [{
     "name": "api-freshness",
     "urls": [
-      "https://foxy-paypal-burst-converter.herokuapp.com/rates",
-      "https://foxy-paypal-burst-converter.herokuapp.com/balance"
+      "https://api.get-burst.cf/rates",
+      "https://api.get-burst.cf/balance"
     ],
     "cacheConfig": {
       "strategy": "freshness",
