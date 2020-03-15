@@ -71,6 +71,9 @@
               Not enough balance to buy that much BURST!
             </div>
           </div>
+          <ngb-alert *ngIf="additionalConversionFees && buyAmountBurst" [dismissible]="false" style="margin-top: 1em">
+            Additional conversion fees ({{this.selectedCurrency}} to EUR) from PayPal may apply.
+          </ngb-alert>
         </div>
       </div>
       <a class="btn btn-primary btn-lg" target="_blank" href="{{paypalMeLink}}" role="button" [class.disabled]="amountTooHigh ? true: null">{{buyBurstButtonText}}</a>

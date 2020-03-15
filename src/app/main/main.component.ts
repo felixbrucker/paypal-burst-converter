@@ -13,7 +13,7 @@ export class MainComponent implements OnInit {
 
   private _buyAmountFiat = null;
   private rates = {};
-  private currency = 'usd';
+  private currency = 'eur';
   private balance = null;
 
   @ViewChild('instance', {static: true}) instance: NgbTypeahead;
@@ -97,6 +97,10 @@ export class MainComponent implements OnInit {
     }
 
     return (this.buyAmountFiat / rate).toFixed(2);
+  }
+
+  get additionalConversionFees() {
+    return this.selectedCurrency !== 'EUR';
   }
 
   get buyAmountFiat(): number {
